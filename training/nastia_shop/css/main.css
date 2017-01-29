@@ -1,0 +1,516 @@
+                                        /* adjustment*/
+html{
+    width: 100%;
+    height: 100%;      
+}
+body{
+    background: #f0f0f0;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 1.42;
+    font-family: "HelveticaNeueCyr-Roman";
+}
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.footer{
+    height: 115px;
+    margin-top:-115px;
+    position: relative;
+}
+.empty{
+    height: 115px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box; /* что бы падинги и бордеры не добавлялись к ширине и высоте к размерам, а что бы они уже входили в эти размеры */
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+                            /* Header*/
+
+.header {
+    background: #fb3e38;
+   /* Old browsers */
+   background: -moz-linear-gradient(top, #fb3e38 0%, #ff8f30 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, #fb3e38 0%, #ff8f30 100%);
+   /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, #fb3e38 0%, #ff8f30 100%);
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb3e38', endColorstr='#ff8f30', GradientType=0);
+   /* IE6-9 */
+    margin-bottom: 20px;
+}
+.header_logo, .header_search, .header_menu{
+    float: left;
+    
+}
+.header_logo{
+    width: 25%;
+}
+.header_search{
+    width: 40%;
+}
+.header_menu{
+    width: 35%; 
+}
+.logo{
+    display: inline-block;
+}
+.logo_pic{
+    display: block;
+    max-width: 170px;
+    max-height: 42px;
+}
+
+.search{
+    position: relative;
+}
+.search_input{
+    padding:10px 40px 10px 20px;
+    background-color:rgba(255, 255, 255, 0.2);
+    border: 0 none;
+    border-radius: 15px;
+    width: 100%;
+    color:#fff;
+    outline: none;
+}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+.search_input::-webkit-input-placeholder {color: #fff;}
+.search_input::-moz-placeholder          {color: #fff;}
+.search_input:-moz-placeholder           {color: #fff;}
+.search_input:-ms-input-placeholder      {color: #fff;}
+
+.search_submit{
+    background: url("../img/icons/zoom.png") 0 0 no-repeat;
+    width: 18px;
+    height: 18px;
+    display: block;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -9px;
+    padding: 0;
+}
+                                        /*menu*/
+.menu_item{
+    display: inline-block;
+}
+.menu{
+   text-align: justify;/* выравниваются наш текст (инлайновые елементы) по ширине, но это работает в многострочном контейнере. но этоповедение можно симулировать */
+}
+.menu:after{
+	content:"";
+	display: inline-block;
+	width: 100%;
+    height: 0;
+}
+.menu_link{
+    display: block;
+    padding: 10px;
+}
+
+.menu_link_iconed{
+    padding-left: 50px;
+    padding-right: 20px;
+    position: relative;
+    border: 2px solid #ffaf6a;
+    border-radius: 50px;
+}
+.menu_link-text{
+    color: #fff;
+    font-size: 13px;
+}
+.menu_link-icon{
+    position: absolute;
+    left: 13px;
+    top:0px;
+    bottom: 0px;
+    width: 30px;
+}
+.menu_link_icon_pic{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+.header-top{
+    padding: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) ;
+}
+
+                                /*nov*/
+
+.nav-list{
+    text-align: justify;
+}
+.nav-list:after{
+	content:"";
+	display: inline-block;
+	width: 100%;
+    height: 0;
+}
+.nav-item{
+    display: inline-block;
+}
+
+.nov_link:hover .nov-icon svg * {
+  fill: #ffc960;
+}
+.nov_link:hover .nov-title {
+  color: #ffc960;
+}
+
+.nov-icon, .nov-title{
+    display: inline-block;
+    vertical-align: middle;  
+}
+svg *{
+    fill: #fff;  /*перекрасить картинки в тот цвет который нам нужно*/
+    /*svg - задается все внутри картинки*/
+}
+svg {
+    height: 100%;
+}
+.nov-title{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+}
+                                    /*breadcrumbs*/
+.breadcrumbs-item{
+    display: inline-block;
+    vertical-align: middle;
+}
+.breadcrumbs-link{
+    font-size: 11px;
+    color: #fa3f37;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.breadcrumbs-item:first-child .breadcrumbs-link:before{
+    margin-left:0;
+    display:none;
+}
+.breadcrumbs-link:before{
+    content:"";
+    display:inline-block;
+    background:url("../img/decor/arrow.png") 0 0 no-repeat;
+    width:16px;
+    height:7px;
+    margin-right:15px;
+    vertical-align: middle;
+}
+.title{
+    font-size: 24px;
+    color: #2e2e2e;
+    margin-top: o;
+    font-weight: normal;
+/*    подключить шрифт*/
+}
+                                /*content*/
+.content-wrapper > .container{
+    background: #fff;
+    
+}
+.sidebar{
+    float: left;
+    width: 25%;
+}
+.content{
+    float: left;
+    width: 75%;
+    border-left: #e7e7e7 1px solid;
+}
+.product-item{
+    position: relative;
+    border-bottom:1px solid #e7e7e7;
+}
+.products-slideshow{
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+.slideshow-display{
+    height: 235px;
+    position: relative;
+}
+.slideshow-display-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-height: 95%;
+    max-width: 95%;
+}
+.slideshow-thumbs-item{
+    float: left;
+    width: 25%;
+}
+.slideshow-thumbs-link{
+    display: block;
+    height: 54px;
+    position: relative;
+}
+.slideshow-thumbs-link img{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+/*два класса перед этим описываем таким образом чтобы при изменении размер екрана в нас все оставалось в норме и ничто никуда не сьежджало*/
+.products-title{
+    margin-top: 0;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+.products-desc{
+    padding: 40px 25px;
+}
+.products-desc:before{
+/*    симуляция бордера. если контент будет менятся, что бы наш бордер куда-то некрасиво не перемемтился */
+    content: "";
+    display: block;
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 1px;
+    background:#e7e7e7;
+    left: 30%;
+}
+
+.products-desc-content{
+    font-size: 14px;
+    color: #676767;
+}
+.products-desc-content li{
+   margin-bottom: 10px; /*  отступ между строчками в коде задаем через margin а не  line-height; */
+}
+.products-dest{
+    float: left;
+    width: 45%;
+}
+.products-price{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 25%;
+    padding: 20px;
+}
+
+.products-price-inner{
+    border: 1px solid #e7e7e7;
+    height: 100%;
+    position: relative;
+    padding-bottom: 20px;
+}
+.producs-buy{
+    position: absolute;
+    bottom: 0; /* прибиваеться к низу*/
+    left: 20px; 
+    display: block;
+    padding: 10px 40px;
+    background: #ff8e2f;
+    border-radius: 20px;
+    color: #fff;
+}
+
+                                /*catecories*/
+
+.catecories-item{
+    border-bottom: 1px solid #e7e7e7;
+    position: relative;
+}
+.categories-link{
+    display: block;
+    padding: 10px 50px 10px 20px;
+    font-size: 0;/*  между елементами типа display: inline-block; ставятся пробелы. что бы их убрать нужно родителю поставить такое свойство а деткам font-size с нужным размером*/
+    
+}
+.categories-icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 10%;
+}
+.categories-text{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+    width: 90%;
+    font-size: 14px;
+}
+.categori-amount{
+    position: absolute;
+    font-size: 14px;
+    line-height: 16px;
+    top: 50%;
+    margin-top: -8px;
+    right: 10px;
+}
+                                    /*pagination*/
+
+.pagination{
+    text-align: center;
+    
+    
+}
+.pagination .container{
+    background: #fff;
+    padding: 30px 0;
+}
+
+.pagination-control, .paginetion-list{
+    display: inline-block;
+    vertical-align: middle;
+}
+.pagination-item{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pagination-control{
+    width: 11px;
+    height: 18px;
+    background-image: url(../img/icons/sprite.png);
+    background-repeat: no-repeat;
+}
+.pagination-control-left{
+    background-position: left top;
+}
+.pagination-control-left:hover{
+    background-position: right bottom;
+}
+.pagination-control-right{
+    background-position: left bottom;
+}
+.pagination-control-right:hover{
+    background-position: right top;
+}
+.paginetion-list{
+    margin: 0 26px;
+}
+.pagination-link{
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+}
+.pagination-link:hover{
+    color:#fc3e3d;
+}
+.footer{
+    padding-top: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+header:after, .header-top:after, .content-wrapper > .container:after, .product-item:after, .slideshow-thumbs:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
